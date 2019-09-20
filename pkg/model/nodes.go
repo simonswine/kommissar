@@ -50,7 +50,7 @@ func ingestFor(e *Event, tn *tview.TreeNode) error {
 	newTreeNode := tview.NewTreeNode("")
 	newNodeType := nt.Next(e)
 	if newNodeType == nil {
-		log.Printf("")
+		log.Printf("%s %s")
 		return nil
 	}
 	newTreeNode.SetReference(newNodeType)
